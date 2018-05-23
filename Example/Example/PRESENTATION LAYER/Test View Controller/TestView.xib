@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TestViewController" customModule="Example" customModuleProvider="target">
+            <connections>
+                <outlet property="imageView" destination="TjO-Sb-7xz" id="D2y-Dj-kdv"/>
+                <outlet property="showNextPreviewButton" destination="RD8-Hd-jz6" id="piw-Ft-fkX"/>
+                <outlet property="view" destination="iN0-l3-epB" id="c1s-Mj-dvw"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RD8-Hd-jz6" customClass="Button" customModule="Example" customModuleProvider="target">
+                    <rect key="frame" x="15" y="588" width="345" height="64"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="QJ8-ZX-gXI"/>
+                    </constraints>
+                    <state key="normal" title="Next Image"/>
+                    <connections>
+                        <action selector="showNextImage" destination="-1" eventType="touchUpInside" id="IsL-cW-08B"/>
+                    </connections>
+                </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TjO-Sb-7xz">
+                    <rect key="frame" x="16" y="20" width="344" height="553"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="RD8-Hd-jz6" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="Jdb-r7-fHt"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="RD8-Hd-jz6" secondAttribute="bottom" constant="15" id="K2b-Dx-zah"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="RD8-Hd-jz6" secondAttribute="trailing" constant="15" id="KkP-KR-zjH"/>
+                <constraint firstItem="TjO-Sb-7xz" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="csW-pi-BsG"/>
+                <constraint firstItem="TjO-Sb-7xz" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="lfw-6w-1h0"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="TjO-Sb-7xz" secondAttribute="trailing" constant="15" id="oVg-b5-blO"/>
+                <constraint firstItem="RD8-Hd-jz6" firstAttribute="top" secondItem="TjO-Sb-7xz" secondAttribute="bottom" constant="15" id="t5n-iX-1CP"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
+        </view>
+    </objects>
+</document>
